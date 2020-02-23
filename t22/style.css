@@ -1,0 +1,54 @@
+body{
+	margin:0;
+	padding:0;
+}
+main{
+background:url("1.png") #e8f0e5;	
+background-size:50%;
+background-repeat:no-repeat;	
+width:98%;
+background-position:95%;
+height:400px;
+padding:1%;
+	
+}
+.w-60{
+width:60%;
+float:left;
+height:100px;
+}
+.w-40{
+width:30%;	
+float:left;
+height:100px;
+	
+}
+h2{
+margin-top:160px;	
+}
+article{
+background:linear-gradient(to right, gray,black);
+height:400px;
+color:white;	
+}
+.knopka{
+background-color:black;
+color:white;
+text-decoration:none;
+padding:10px;
+border-radius:10px;	
+}
+.knopka:hover{
+box-shadow:0 0 10px black;	
+}
+a{
+color:black;
+text-decoration:none;
+margin:3px;
+}
+a:hover{
+	border-bottom: 2px solid black;
+}
+.main{
+border-bottom: 2px solid black;
+}
