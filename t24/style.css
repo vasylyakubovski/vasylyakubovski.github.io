@@ -1,0 +1,54 @@
+.block{
+	background:linear-gradient(to right, red, blue);
+	width:500px;
+	height:100px;
+	margin:0 auto;
+	margin-top: 50px;
+	text-align: center;
+	padding-top: 100px;
+	color:white;
+	transition:all 0.5s ease;
+	
+}
+
+
+.animation1:hover{
+	
+box-shadow:inset 0 0 0 30px blue;	
+	
+}
+
+.animation2:hover{		
+opacity:0.6;	
+}
+
+.animation3:hover{
+	
+transform:scale(1.5);
+	
+}
+
+.animation4:hover{
+	
+border-radius:100px;	
+width:30%;	
+}
+
+.animation5:hover{
+	
+transform:rotate(20deg);
+
+	
+}
+.text{
+animation-duration: 3s;	
+animation-name: animation;
+animation-iteration-count:infinite;
+	
+}
+
+@keyframes animation{
+0%{transform:rotate(0deg);}
+100%{transform:rotate(360deg);	
+	
+}
