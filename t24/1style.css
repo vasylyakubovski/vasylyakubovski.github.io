@@ -1,0 +1,41 @@
+body{
+width:1000px;
+margin:0 auto;	
+color:navy;
+font-family:cursive;
+}
+.block{
+padding: 45px 30px 45px 30px;	
+background:lightblue;
+float: left;
+margin:5px;
+box-shadow: 2px 2px 5px blue;
+transition: all 0.5s ease;
+}
+.anim1:hover{
+transform:rotate(15deg)scale(1.1);
+background:lightgreen;
+box-shadow: 2px 2px 5px green;
+
+	
+}
+.no-order{
+background:#db5166;
+color:white;	
+}
+.anim2:hover{
+animation-name:anime;
+animation-duration: 1s;
+}
+@keyframes anime{
+0%{transform:rotate(0deg)}
+20%{transform:rotate(15deg)}
+40%{transform:rotate(-15deg)}
+60%{transform:rotate(15deg)}
+80%{transform:rotate(-15deg)}
+100%{transform:rotate(0deg)}
+}
+.back{
+margin-top:400px;
+margin-left:100px;	
+}
