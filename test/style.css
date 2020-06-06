@@ -5,26 +5,22 @@ background:#ace36d;
 font-family: 'Architects Daughter', cursive;
 }
 .header{
-height:100;
-display:flex;
-justify-content:center;
-align-items:center;
-background:#ad4769;
+height:400px;
 color:#eda011;
+background: linear-gradient(rgba(0,0,0, 0.6),rgba(0,0,0, 0.6)), url('картинки/bike.jpg');
+background-size: 100%;
+}
 }
 .header>h1{
 font-size:50px;	
 font-family:Tahoma;
 }
 .menu{
-height:40px;
 display:flex;
-justify-content:space-around;
-align-items:center;
-background:lightgray;
+justify-content:flex-end;
 }
 .menu>a{
-color:black;
+color:white;
 text-decoration:none;
 margin-right:5px;
 font-size:25px;
@@ -76,6 +72,7 @@ padding-top:5px;
 img{
 width:300px;	
 height:200px;
+transition: transform 1s;
 }
 img:hover{
 transform:scale(1.4); 
@@ -87,6 +84,7 @@ display:flex;
 display:inline;
 background:red;
 border-radius:5px;
+padding:10px 20px;
 }
 #knopka:hover{
 background:#e8846d;
@@ -101,21 +99,26 @@ align-items:center;
 padding-top:60px;
 }
 .forma1{
-height:30px;
-width:200px;
+height:40px;
+width:250px;
 }	
 .forma2{
-height:30px;
-width:200px;
+height:40px;
+width:250px;
 }
 .button{
 background: #10c9c3;
 padding: 20px 40px;
+width:100px;
 text-decoration: none;
 color: white;
 display:flex;
 justify-content:center;
 font-size:25px;
+}
+.button1{
+display:flex;
+justify-content:center;
 }
 .button:hover{
 background:#13e2ed;
