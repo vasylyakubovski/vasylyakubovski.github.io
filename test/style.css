@@ -1,11 +1,11 @@
 body{
 margin:0;
 padding:0;
-background:#ace36d;
-font-family: 'Architects Daughter', cursive;
+background:white;
+font-family:sans-serif;
 }
 .header{
-height:400px;
+height:700px;
 color:white;
 background: linear-gradient(rgba(0,0,0, 0.6),rgba(0,0,0, 0.6)), url('картинки/bike.jpg');
 background-size: 100%;
@@ -20,9 +20,27 @@ height:100px;
 color:#eda011;
 background:#7d1e8a;	
 }
-.nav>h1{
+.nav1{
+height:700px;
+color:white;
+background: linear-gradient(rgba(0,0,0, 0.6),rgba(0,0,0, 0.6)), url('картинки/bike2.jpg');
+background-size: 100%;	
+}
+.nav1>h1{
 font-size:70px;	
-font-family:Tahoma;	
+font-family:Tahoma;
+color:#eda011;	
+}
+.nav2{
+height:700px;
+color:white;
+background: linear-gradient(rgba(0,0,0, 0.6),rgba(0,0,0, 0.6)), url('картинки/bike3.jpg');
+background-size: 100%;	
+}
+.nav2>h1{
+font-size:70px;	
+font-family:Tahoma;
+color:#eda011;
 }
 .menu{
 display:flex;
@@ -49,13 +67,13 @@ text-align:center;
 }
 .main-right1{
 height:600px;
-border: 2px solid red;
+border: 2px solid gray;
 padding: 20px 10px;
 margin:20px 10px;
 }
 .main-right2{
 height:600px;
-border: 2px solid red;
+border: 2px solid gray;
 padding: 20px 10px;
 margin:20px 10px;
 }
@@ -66,13 +84,13 @@ text-align:center;
 }
 .main-center1{
 height:600px;
-border: 2px solid red;
+border: 2px solid gray;
 padding: 20px 10px;
 margin:20px 10px;
 }
 .main-center2{
 height:600px;
-border: 2px solid red;
+border: 2px solid gray;
 padding: 20px 10px;
 margin:20px 10px;
 }
@@ -83,13 +101,13 @@ text-align:center;
 }
 .main-left1{
 height:600px;
-border: 2px solid red;
+border: 2px solid gray;
 padding: 20px 10px;
 margin:20px 10px;
 }
 .main-left2{
 height:600px;
-border: 2px solid red;
+border: 2px solid gray;
 padding: 20px 10px;
 margin:20px 10px;
 }
@@ -102,7 +120,7 @@ height:200px;
 transition: transform 1s;
 }
 img:hover{
-transform:scale(1.4); 
+transform:scale(1.2); 
 }
 #knopka{
 text-decoration:none;
@@ -114,8 +132,7 @@ border-radius:5px;
 padding:10px 20px;
 }
 #knopka:hover{
-background:#e8846d;
-color:black;	
+background:#c4412f;
 }
 .form{
 height:550px;
