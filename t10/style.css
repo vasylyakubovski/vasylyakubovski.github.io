@@ -1,0 +1,39 @@
+body{
+	padding:0;
+	margin:0;
+	font-family: sens-serif;
+}
+.navbar{
+display:flex;
+justify-content: space-between;
+background:#912b19;
+font-size:20px;
+padding: 10px 20px;
+}
+.links>a{
+text-decoration:none;	
+color:white;
+margin-right:20px;
+transition: color 0.5s ease;	
+}
+.links>a:hover{
+color:yellow;}
+.name{
+color:white;
+}
+.name>a{
+color:white;
+}
+.block_1{
+	font-size: 28px;
+	text-align:center;
+	margin-top: 100px;
+}
+#id{
+	
+	
+}
+.red{
+	color:red;
+	text-decoration:none;	
+}
