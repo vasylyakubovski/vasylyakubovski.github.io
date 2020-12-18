@@ -1,0 +1,30 @@
+body{
+margin:0;
+padding:0;
+background:#d0d7d9;
+color:navy;
+font-family: sans-serif;
+}
+.month{
+width:770px;
+display:flex;
+flex-wrap:wrap;
+background-color:lightgray;
+margin:0 auto;
+justify-content:center;
+}
+.day{
+display:flex;
+width:100px;
+height:100px;
+background:lime;
+justify-content:center;
+border-radius:6px;
+text-align:center;
+align-items:center;
+box-shadow:2px 2px 5px #24ab22;
+margin:4px;
+}
+.gray{
+background:orange;
+}
