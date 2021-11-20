@@ -1,0 +1,10 @@
+.box-image{
+    width: 80px;
+    height: 80px;
+    background: #ff0000;
+    margin-right: 20px;
+}
+.isActive{
+    fill: navy;
+    
+}
