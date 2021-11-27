@@ -1,0 +1,8 @@
+.comment{
+    border: 1px solid gray;
+    padding: 10px 5px 5px;
+    border-radius: 3px;
+}
+.old_comments{
+    margin-bottom: 50px;
+}
