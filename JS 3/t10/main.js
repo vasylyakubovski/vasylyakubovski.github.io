@@ -1,41 +1,27 @@
-const App = {
-    data() {
-      return {
-        counter: 0,
-        title: "Test Title",
-        showTest: true,
-        balance: 0,
-        showButton: true,
-        courses: [
-            {title: "2015 year", value:"15"},
-            {title: "2018 year", value:"21"},
-            {title: "2022 year", value:"30"},
-
-        ]
-      }
-    },
-    mounted(){
-    setInterval(() => {
-      this.counter++;
-      this.showButton = true;
-      if(this.counter >= 3){
-        this.show = true;
-      }
-    }, 1000)
-    this.title = "Сторінка  завантажена";
-  },
-  methods: {
-      getBitcoin(){
-          alert(`
-          Виведено ${this.counter} bitcoins!
-          На рахунку ${this.balance} bitcoins!
-          
-          `);
-          this.counter = 0;
-      }
-  }
+const data = {
+    message: "Hello vue.js",
+    products: ["Iphone 13", "Iphone 14"],
+    image: "https://i.allo.ua/media/catalog/product/cache/1/image/524x494/602f0fa2c1f0d1ba5e241f914e856ff9/i/p/iphone-13-mini-blue-select-2021_wid_940_hei_1112_f_1_3.jpg",
+    test: {
+        id: 0,
+        name: "Ipad"
+    }
 }
+
+const CardTemplate = {
+    props: ["product"],
+    template: `<p>{{product.name}}</p>`
+  }
   
 
-  Vue.createApp(App).mount('#app')
+const app = {
+    data(){
+        return data
+    },
 
+    components: {
+        CardTemplate
+      },
+}
+
+Vue.createApp(app). mount('#app')
