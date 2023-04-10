@@ -1,0 +1,48 @@
+<div class="card productCard" href="">
+    <div class="row">
+        <span v-if="product.actionPrice > 0" class="action">Акція</span>
+
+        <h4 class="text-center">
+            <a @click="goToProduct(product.id)">{{product.name}}</a>
+        </h4>
+        <p class="d-flex justify-content-center">
+            <a @click="goToProduct(product.id)"><img :src="product.url" alt=""></a>
+        </p>
+        <span class="action_price">
+            <span v-if="product.actionPrice > 0" class="old_price">{{product.price}}грн</span> 
+        </span>
+        <p class="d-flex justify-content-between" class="price">
+           <span>Ціна: </span>
+            <span>
+             <span v-if="product.actionPrice > 0">
+                <span class="new_price">{{product.actionPrice}}грн</span>
+             </span>
+             <span v-if="product.actionPrice == null || product.actionPrice == ''">{{product.price}}грн</span>
+            </span>
+        </p>
+        <p class="d-flex justify-content-between">
+            <span>Діагональ екрану: </span>
+            <span>{{product.display}}</span>
+         </p>
+         <p class="d-flex justify-content-between">
+            <span>Камера: </span>
+            <span>{{product.camera}}</span>
+         </p>
+         <p class="d-flex justify-content-between">
+            <span>Ємкість батареї: </span>
+            <span>{{product.acc}}мА*ч</span>
+         </p>
+        <p class="d-flex justify-content-between">
+            <button class="btn btn-danger btn-sm" @click="deleteProduct(product.id)">
+                Delete
+            </button>
+            <button 
+                class="btn btn-primary btn-sm px-3" 
+                @click="editProduct(product.id)"
+                data-bs-toggle="modal" data-bs-target="#editModal"
+                >
+                Edit
+            </button>
+        </p>
+    </div>
+</div>
