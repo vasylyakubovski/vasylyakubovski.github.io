@@ -1,0 +1,55 @@
+<div class="addProduct">
+    <h1 class="text-center mt-5">Add new product</h1>
+    
+    <div class="add-product-form">
+        <div class="mb-3">
+            <label class="form-label">Product name</label>
+            <input type="text" class="form-control" placeholder="Product name" id="product_name" required>
+        </div>
+        <div class="mb-3">
+            <label class="form-label">Product img</label>
+            <input type="text" class="form-control" 
+                placeholder="Product img" id="product_img" required
+                v-model="$parent.newProductImage">
+        </div>
+        <div class="mb-3">
+            <label class="form-label">Product price</label>
+            <input type="number" class="form-control" placeholder="Product price" id="product_price" required>
+        </div>
+        <div class="mb-3">
+            <label class="form-label">Action price</label>
+            <input type="text" class="form-control" placeholder="Action price" id="action_price" required>
+        </div>
+        <div class="mb-3">
+            <label class="form-label">Product display</label>
+            <input type="text" class="form-control" placeholder="Product display" id="product_display" required>
+        </div>
+        <div class="mb-3">
+            <label class="form-label">Product camera</label>
+            <input type="text" class="form-control" placeholder="Product camera" id="product_camera" required>
+        </div>
+        <div class="mb-3">
+            <label class="form-label">Product acc</label>
+            <input type="text" class="form-control" placeholder="Product acc" id="product_acc" required>
+        </div>
+        <div class="mb-3">
+            <label class="form-label">Product photos</label>
+            <textarea class="form-control" id="product_photos" rows="3"></textarea>
+        </div>
+        <div class="mb-3">
+            <label class="form-label">Product description</label>
+            <input type="text" class="form-control" placeholder="Product description" id="product_description" required>
+        </div>
+
+        <div class="mb-3">
+            <button class="btn btn-primary w-100 py-2 mb-2" @click="addProductToDB">
+                Add new product
+            </button>
+        </div>
+    </div>
+
+    <p align="center">
+        <img :src="$parent.newProductImage" alt="" height="200">
+    </p>
+    
+</div>
